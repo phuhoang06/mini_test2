@@ -1,14 +1,11 @@
-public abstract class NhanVien {
-private String codeNV;
-private String name;
-private int age;
-private int numberPhone;
-private String email;
+public abstract class Employee {
+    private String codeNV;
+    private String name;
+    private int age;
+    private String numberPhone;
+    private String email;
 
-    public NhanVien() {
-    }
-
-    public NhanVien(String codeNV, String name, int age, int numberPhone, String email) {
+    public Employee(String codeNV, String name, int age, String numberPhone, String email) {
         this.codeNV = codeNV;
         this.name = name;
         this.age = age;
@@ -40,11 +37,11 @@ private String email;
         this.age = age;
     }
 
-    public int getNumberPhone() {
+    public String getNumberPhone() {
         return numberPhone;
     }
 
-    public void setNumberPhone(int numberPhone) {
+    public void setNumberPhone(String numberPhone) {
         this.numberPhone = numberPhone;
     }
 
@@ -56,7 +53,6 @@ private String email;
         this.email = email;
     }
 
+    // Phương thức trừu tượng để tính lương
     public abstract double getSalary();
-
-
 }

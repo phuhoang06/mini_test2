@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
         // Khởi tạo mảng đối tượng nhân viên
-        Employee[] nhanvien = new Employee[5];
+        Employee[] nhanvien = new Employee[6];
 
         // Khởi tạo các nhân viên full-time
-        nhanvien[0] = new FullTimeStaff("C09", "Long", 27, "0123", "abc@gmail.com", 5000000, 3000000, 0);
-        nhanvien[1] = new FullTimeStaff("C09", "Son", 27, "0123", "abc@gmail.com", 8000000, 2000000, 0);
-        nhanvien[2] = new FullTimeStaff("C09", "Dung", 27, "0123", "abc@gmail.com", 10000000, 5000000, 200000);
+        nhanvien[0] = new FullTimeStaff("C09", "Long", 27, "0123", "abc@gmail.com", 50000000, 3000000, 0);
+        nhanvien[1] = new FullTimeStaff("C09", "Son", 27, "0123", "abc@gmail.com", 80000000, 2000000, 0);
+        nhanvien[2] = new FullTimeStaff("C09", "Dung", 27, "0123", "abc@gmail.com", 1000000000, 5000000, 200000);
 
         // Khởi tạo các nhân viên part-time
         nhanvien[3] = new PartTimeStaff("C09", "Phu", 18, "01234", "abc@gmail.com", 233, 100000);
         nhanvien[4] = new PartTimeStaff("C09", "Manh", 18, "01234", "abc@gmail.com", 33, 100000);
+        nhanvien[5] = new PartTimeStaff("C09", "Vuong", 18, "01234", "abc@gmail.com", 333, 100000);
 
         // Hiển thị lương của từng nhân viên
         for (Employee nv : nhanvien) {
